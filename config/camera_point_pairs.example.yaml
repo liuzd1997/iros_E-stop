@@ -1,0 +1,5 @@
+# Fill with measured corresponding points in METRES, same order, at least six.
+# Do not use guessed positions. Optical axes: X right, Y down, Z forward.
+camera_frame: camera_color_optical_frame
+camera_points: []
+base_points: []

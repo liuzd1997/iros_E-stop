@@ -1,0 +1,29 @@
+{
+  "source": "synthetic",
+  "mode": "plan_only",
+  "started_at": "2026-09-26T04:24:14.101027+00:00",
+  "result": "aborted",
+  "initial_pose_restored": false,
+  "buttons": {},
+  "events": [
+    {
+      "stage": "Initial pose saved; acquiring all targets",
+      "button": null,
+      "monotonic": 1647.89958914
+    },
+    {
+      "stage": "Aborted; uncompleted targets remain uncompleted. No unplanned recovery motion.",
+      "button": null,
+      "monotonic": 1648.12517218
+    }
+  ],
+  "initial_joints": {
+    "joint1": -8.273600717075169e-05,
+    "joint2": 9.663592677097768e-05,
+    "joint3": -1.5895246621221305e-05,
+    "joint4": 9.03094060253352e-05,
+    "joint5": -1.7857255088165402e-05,
+    "joint6": 8.22857853025198e-05
+  },
+  "error": "Expected 4 buttons, detected 3"
+}

@@ -1,0 +1,42 @@
+# Standard six-joint Piper + CLOSED AgileX gripper. All distances are metres.
+can_port: can0
+ros_domain_id: 79
+can_bitrate: 1000000
+speed_percent: 5
+camera_config: d435i_buttons.yaml
+calibration: camera_front_assumed.yaml
+# Model-derived flange-to-fingertip distance. Measure the actual contact tool.
+tip_offset_z: 0.1425
+# Set these only after checking the actual rig. They are not camera calibration.
+commissioning:
+  robot_and_scene_checked: false
+  tool_geometry_checked: false
+  compliant_contact_tool_checked: false
+  button_travel_checked: false
+  external_estop_available: false
+  # The target switches must not remove power/control from this Piper.
+  targets_do_not_stop_piper: false
+motion:
+  max_joint_speed: 0.25
+  command_rate: 50.0
+  feedback_timeout: 0.25
+  start_tolerance: 0.02
+  path_tolerance: 0.08
+  goal_tolerance: 0.005
+  settle_timeout: 3.0
+  max_duration: 120.0
+  # Optional measured per-joint torque bounds (Nm), six positive numbers.
+  # These do not provide Cartesian contact-force control.
+  torque_limits: null
+press:
+  approach_distance: 0.03
+  step: 0.001
+  max_travel: 0.005
+  hold_seconds: 3.0
+  tip_tolerance: 0.003
+  feedback_timeout: 0.5
+  feedback_topic: /estop/switch_states
+  association_tolerance: 0.02
+  # Bind physical switch channels to measured cap centres in base_link.
+  # Example format: [{channel: switch_a, position: [0.5, 0.0, 0.3]}]
+  bindings: []

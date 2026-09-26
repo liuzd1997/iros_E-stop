@@ -1,0 +1,12 @@
+# Nominal OPTICAL-frame pose for planning only; not a measured calibration.
+# Optical centre: 100 mm forward of base_link and 80 mm above it.
+# Optical +Z looks along base +X; optical +X is base -Y; optical +Y is base -Z.
+calibrated: false
+assumed: true
+parent_frame: base_link
+camera_frame: camera_color_optical_frame
+camera_to_base:
+  - [0.0, 0.0, 1.0, 0.10]
+  - [-1.0, 0.0, 0.0, 0.0]
+  - [0.0, -1.0, 0.0, 0.08]
+  - [0.0, 0.0, 0.0, 1.0]

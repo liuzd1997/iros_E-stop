@@ -1,0 +1,10 @@
+# Optional Linux GPIO reader for independent auxiliary switch contacts.
+# Fill line offsets from gpioinfo for YOUR board; offsets are not header pin numbers.
+chip: /dev/gpiochip0
+rate_hz: 20.0
+debounce_samples: 3
+topic: /estop/switch_states
+inputs: []
+# Example format (not a proposed wiring assignment):
+# inputs:
+#   - {channel: switch_a, offset: 12, active_low: true}

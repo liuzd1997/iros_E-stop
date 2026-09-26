@@ -1,0 +1,10 @@
+{
+  "frame": "camera_color_optical_frame",
+  "stable_buttons_max": 0,
+  "stable_buttons_now": 0,
+  "images": {
+    "raw": 87,
+    "overlay": 34
+  },
+  "detector_status": "No valid red/yellow button geometry detected"
+}

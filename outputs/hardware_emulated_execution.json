@@ -1,0 +1,232 @@
+{
+  "source": "camera",
+  "mode": "execute_hardware",
+  "started_at": "2026-09-26T05:45:47.887928+00:00",
+  "result": "completed",
+  "initial_pose_restored": true,
+  "buttons": {
+    "button_003": {
+      "position": [
+        0.5000000238418579,
+        0.12000000476837158,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "status": "completed",
+      "verification": {
+        "method": "physical_switch_transition_and_joint_feedback",
+        "channel": "switch_0",
+        "hold_seconds": 3.0091002229992228,
+        "tip_error_m": 5.823510143706386e-07,
+        "travel_m": 0.002
+      },
+      "switch_channel": "switch_0"
+    },
+    "button_002": {
+      "position": [
+        0.5000000238418579,
+        0.0,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "status": "completed",
+      "verification": {
+        "method": "physical_switch_transition_and_joint_feedback",
+        "channel": "switch_1",
+        "hold_seconds": 3.091625780999493,
+        "tip_error_m": 3.9192279002137174e-07,
+        "travel_m": 0.002
+      },
+      "switch_channel": "switch_1"
+    },
+    "button_001": {
+      "position": [
+        0.5000000238418579,
+        -0.12000000476837158,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "status": "completed",
+      "verification": {
+        "method": "physical_switch_transition_and_joint_feedback",
+        "channel": "switch_2",
+        "hold_seconds": 3.0131890140000905,
+        "tip_error_m": 5.823373067548044e-07,
+        "travel_m": 0.002
+      },
+      "switch_channel": "switch_2"
+    }
+  },
+  "events": [
+    {
+      "stage": "Saved physical joint pose; acquiring camera targets",
+      "button": null,
+      "monotonic": 6540.826944229
+    },
+    {
+      "stage": "Planned approach, bounded press steps, and every retract branch",
+      "button": "button_003",
+      "monotonic": 6542.423440919
+    },
+    {
+      "stage": "Planned approach, bounded press steps, and every retract branch",
+      "button": "button_002",
+      "monotonic": 6542.66512997
+    },
+    {
+      "stage": "Planned approach, bounded press steps, and every retract branch",
+      "button": "button_001",
+      "monotonic": 6542.896637846
+    },
+    {
+      "stage": "Complete itinerary and return planned",
+      "button": null,
+      "monotonic": 6542.944857985
+    },
+    {
+      "stage": "Approach",
+      "button": "button_003",
+      "monotonic": 6542.952801236
+    },
+    {
+      "stage": "Touch",
+      "button": "button_003",
+      "monotonic": 6559.601740374
+    },
+    {
+      "stage": "Press step 1.0 mm",
+      "button": "button_003",
+      "monotonic": 6562.534844484
+    },
+    {
+      "stage": "Press step 2.0 mm",
+      "button": "button_003",
+      "monotonic": 6563.161309682
+    },
+    {
+      "stage": "Hold with continuous switch and robot feedback",
+      "button": "button_003",
+      "monotonic": 6563.928976856
+    },
+    {
+      "stage": "Verified; retract",
+      "button": "button_003",
+      "monotonic": 6566.939286936
+    },
+    {
+      "stage": "Completed",
+      "button": "button_003",
+      "monotonic": 6569.795559952
+    },
+    {
+      "stage": "Approach",
+      "button": "button_002",
+      "monotonic": 6569.801434943
+    },
+    {
+      "stage": "Touch",
+      "button": "button_002",
+      "monotonic": 6580.319979402
+    },
+    {
+      "stage": "Press step 1.0 mm",
+      "button": "button_002",
+      "monotonic": 6583.132026892
+    },
+    {
+      "stage": "Press step 2.0 mm",
+      "button": "button_002",
+      "monotonic": 6583.760792047
+    },
+    {
+      "stage": "Hold with continuous switch and robot feedback",
+      "button": "button_002",
+      "monotonic": 6584.537037435
+    },
+    {
+      "stage": "Verified; retract",
+      "button": "button_002",
+      "monotonic": 6587.629981157
+    },
+    {
+      "stage": "Completed",
+      "button": "button_002",
+      "monotonic": 6590.553548207
+    },
+    {
+      "stage": "Approach",
+      "button": "button_001",
+      "monotonic": 6590.56136393
+    },
+    {
+      "stage": "Touch",
+      "button": "button_001",
+      "monotonic": 6601.038768075
+    },
+    {
+      "stage": "Press step 1.0 mm",
+      "button": "button_001",
+      "monotonic": 6603.936604718
+    },
+    {
+      "stage": "Press step 2.0 mm",
+      "button": "button_001",
+      "monotonic": 6604.637766006
+    },
+    {
+      "stage": "Hold with continuous switch and robot feedback",
+      "button": "button_001",
+      "monotonic": 6605.27397143
+    },
+    {
+      "stage": "Verified; retract",
+      "button": "button_001",
+      "monotonic": 6608.289038087
+    },
+    {
+      "stage": "Completed",
+      "button": "button_001",
+      "monotonic": 6611.164439009
+    },
+    {
+      "stage": "Return to saved physical joint pose",
+      "button": null,
+      "monotonic": 6611.166506934
+    },
+    {
+      "stage": "All physical switch transitions verified; initial pose restored",
+      "button": null,
+      "monotonic": 6627.821706885
+    }
+  ],
+  "calibration_assumed": false,
+  "hardware_validated": false,
+  "emulated_test": true,
+  "note": "Hardware has not been independently validated; emulated tests are explicitly marked.",
+  "initial_joints": {
+    "joint1": 0.0,
+    "joint2": 0.0,
+    "joint3": 0.0,
+    "joint4": 0.0,
+    "joint5": 0.0,
+    "joint6": 0.0
+  },
+  "order": [
+    "button_003",
+    "button_002",
+    "button_001"
+  ],
+  "return_max_joint_error_rad": 9.91319581400603e-05
+}

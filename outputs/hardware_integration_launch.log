@@ -1,0 +1,522 @@
+[INFO] [launch]: All log files can be found below /home/mppi_zd/AgileX_piper/ros2_ws/log/hardware_integration/2026-09-25-22-45-45-172205-macs-34514
+[INFO] [launch]: Default logging verbosity is set to INFO
+WARNING:root:[33;21mCannot infer SRDF from `/home/mppi_zd/AgileX_piper/ros2_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+[INFO] [python3-1]: process started with pid [34518]
+[INFO] [robot_state_publisher-2]: process started with pid [34519]
+[INFO] [move_group-3]: process started with pid [34520]
+[INFO] [python3-4]: process started with pid [34521]
+[robot_state_publisher-2] [INFO] [1790401545.891722188] [robot_state_publisher]: Robot initialized
+[move_group-3] [INFO] [1790401545.938087621] [move_group.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0.00334025 seconds
+[move_group-3] [INFO] [1790401545.938231107] [move_group.moveit.moveit.core.robot_model]: Loading robot model 'agx_arm'...
+[move_group-3] [INFO] [1790401545.938246921] [move_group.moveit.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[move_group-3] [INFO] [1790401546.125755085] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'arm': 1 1 1 1 1 1
+[move_group-3] [INFO] [1790401546.956926717] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-3] [INFO] [1790401546.957126350] [move_group.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-3] [INFO] [1790401546.957875321] [move_group.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-3] [INFO] [1790401546.958318410] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-3] [INFO] [1790401546.958332133] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[move_group-3] [INFO] [1790401546.958462073] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-3] [INFO] [1790401546.958776667] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-3] [INFO] [1790401546.958835258] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[move_group-3] [INFO] [1790401546.959113500] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-3] [INFO] [1790401546.959127999] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-3] [INFO] [1790401546.959917340] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-3] [INFO] [1790401546.960224869] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-3] [WARN] [1790401546.960385928] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-3] [ERROR] [1790401546.960398169] [move_group.moveit.moveit.ros.occupancy_map_monitor]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-3] [INFO] [1790401548.592790469] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'STOMP'
+[move_group-3] [INFO] [1790401548.593406905] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401548.593953992] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401548.593966344] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401548.594105535] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401548.594112081] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-3] [INFO] [1790401548.594126285] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-3] [INFO] [1790401548.594129812] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-3] [INFO] [1790401548.594144098] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-3] [INFO] [1790401548.594682066] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401548.595819748] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401548.595833016] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-3] [INFO] [1790401548.597545387] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-3] [INFO] [1790401548.597562369] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-3] [INFO] [1790401548.598014005] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-3] [INFO] [1790401548.600316498] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'CHOMP'
+[move_group-3] [INFO] [1790401548.600889001] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401548.600946213] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401548.600950852] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401548.601094774] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401548.601101727] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-3] [INFO] [1790401548.601117874] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-3] [INFO] [1790401548.601121847] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-3] [INFO] [1790401548.601131634] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-3] [INFO] [1790401548.601662231] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401548.601887206] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401548.601893150] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-3] [INFO] [1790401548.602248520] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-3] [INFO] [1790401548.602259039] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-3] [INFO] [1790401548.602477561] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-3] [INFO] [1790401548.604153794] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-3] [INFO] [1790401548.607276024] [move_group.moveit.moveit.planners.pilz.command_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[move_group-3] [INFO] [1790401548.607296497] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[move_group-3] [INFO] [1790401548.608140955] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [CIRC]
+[move_group-3] [INFO] [1790401548.608162204] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[move_group-3] [INFO] [1790401548.608719245] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [LIN]
+[move_group-3] [INFO] [1790401548.608733059] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[move_group-3] [INFO] [1790401548.609302488] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [PTP]
+[move_group-3] [INFO] [1790401548.609317414] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'Pilz Industrial Motion Planner'
+[move_group-3] [INFO] [1790401548.609855409] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401548.609903972] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401548.609908472] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401548.610074172] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401548.610081485] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-3] [INFO] [1790401548.610097671] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-3] [INFO] [1790401548.610101467] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-3] [INFO] [1790401548.610114689] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-3] [INFO] [1790401548.610656804] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-3] [INFO] [1790401548.611232076] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-3] [INFO] [1790401548.611244084] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-3] [INFO] [1790401548.611466911] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-3] [INFO] [1790401548.620938074] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[move_group-3] [INFO] [1790401548.621545077] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401548.621602371] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401548.621607473] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401548.621806209] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401548.621815227] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-3] [INFO] [1790401548.621832735] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-3] [INFO] [1790401548.621836865] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-3] [INFO] [1790401548.621847495] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-3] [INFO] [1790401548.622401943] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401548.622722665] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401548.622732082] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-3] [INFO] [1790401548.623152349] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-3] [INFO] [1790401548.623163857] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-3] [INFO] [1790401548.623387147] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-3] [INFO] [1790401548.650979556] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for arm_controller
+[move_group-3] [INFO] [1790401548.651218984] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401548.651248234] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401548.651633232] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-3] [INFO] [1790401548.651665010] [move_group]: MoveGroup debug mode is ON
+[move_group-3] [INFO] [1790401548.666659811] [move_group.moveit.moveit.planners.pilz.move_group_sequence_action]: initialize move group sequence action
+[move_group-3] [INFO] [1790401548.669068886] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-3] [INFO] [1790401548.669291620] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-3] [INFO] [1790401548.669971259] [move_group.moveit.moveit.ros.move_group.executable]: 
+[move_group-3] 
+[move_group-3] ********************************************************
+[move_group-3] * MoveGroup using: 
+[move_group-3] *     - apply_planning_scene_service
+[move_group-3] *     - clear_octomap_service
+[move_group-3] *     - get_group_urdf
+[move_group-3] *     - load_geometry_from_file
+[move_group-3] *     - CartesianPathService
+[move_group-3] *     - execute_trajectory_action
+[move_group-3] *     - get_planning_scene_service
+[move_group-3] *     - kinematics_service
+[move_group-3] *     - move_action
+[move_group-3] *     - motion_plan_service
+[move_group-3] *     - query_planners_service
+[move_group-3] *     - state_validation_service
+[move_group-3] *     - save_geometry_to_file
+[move_group-3] *     - SequenceAction
+[move_group-3] *     - SequenceService
+[move_group-3] ********************************************************
+[move_group-3] 
+[move_group-3] [INFO] [1790401548.670017137] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
+[move_group-3] [INFO] [1790401548.670030850] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
+[move_group-3] [96mLoading 'move_group/ApplyPlanningSceneService'...[0m
+[move_group-3] [96mLoading 'move_group/ClearOctomapService'...[0m
+[move_group-3] [96mLoading 'move_group/GetUrdfService'...[0m
+[move_group-3] [96mLoading 'move_group/LoadGeometryFromFileService'...[0m
+[move_group-3] [96mLoading 'move_group/MoveGroupCartesianPathService'...[0m
+[move_group-3] [96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...[0m
+[move_group-3] [96mLoading 'move_group/MoveGroupGetPlanningSceneService'...[0m
+[move_group-3] [96mLoading 'move_group/MoveGroupKinematicsService'...[0m
+[move_group-3] [96mLoading 'move_group/MoveGroupMoveAction'...[0m
+[move_group-3] [96mLoading 'move_group/MoveGroupPlanService'...[0m
+[move_group-3] [96mLoading 'move_group/MoveGroupQueryPlannersService'...[0m
+[move_group-3] [96mLoading 'move_group/MoveGroupStateValidationService'...[0m
+[move_group-3] [96mLoading 'move_group/SaveGeometryToFileService'...[0m
+[move_group-3] [96mLoading 'pilz_industrial_motion_planner/MoveGroupSequenceAction'...[0m
+[move_group-3] [96mLoading 'pilz_industrial_motion_planner/MoveGroupSequenceService'...[0m
+[move_group-3] 
+[move_group-3] [92mYou can start planning now![0m
+[move_group-3] 
+[move_group-3] [INFO] [1790401549.780494933] [move_group.moveit.moveit.ros.move_group.plan_service]: Received new planning service request...
+[move_group-3] [INFO] [1790401549.780639614] [move_group.moveit.moveit.ros.move_group.capability]: Using planning pipeline 'ompl'
+[move_group-3] [INFO] [1790401549.781271514] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401549.781351706] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401549.781373696] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-3] [INFO] [1790401549.781450074] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-3] [INFO] [1790401549.782886665] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-3] [INFO] [1790401549.783183833] [move_group]: Calling Planner 'OMPL'
+[move_group-3] [INFO] [1790401549.813393080] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401549.822893632] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-3] [INFO] [1790401549.824160959] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-3] [WARN] [1790401549.824334908] [move_group.moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-3] [INFO] [1790401549.832710175] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.832944104] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.841255344] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 32 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.888899644] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.889088574] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.897041361] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 31 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.901229897] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.901400809] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.902318952] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.907240523] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.907410482] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.915596772] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 32 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.919586869] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.919711680] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.920459855] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.927331726] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.927465353] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.936413122] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 33 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.941237475] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.941408377] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.942284271] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.947079115] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.947266888] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.956528640] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 34 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.960386843] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.960559764] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.961352947] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.966091162] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.966241260] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.975134855] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 35 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.979741158] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.979895339] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.980819314] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401549.986023203] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401549.986147264] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401549.994989435] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 36 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.004559475] [move_group.moveit.moveit.ros.move_group.plan_service]: Received new planning service request...
+[move_group-3] [INFO] [1790401550.004656381] [move_group.moveit.moveit.ros.move_group.capability]: Using planning pipeline 'ompl'
+[move_group-3] [INFO] [1790401550.004744582] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401550.004781979] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401550.004802590] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-3] [INFO] [1790401550.004872412] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-3] [INFO] [1790401550.005763582] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-3] [INFO] [1790401550.005892930] [move_group]: Calling Planner 'OMPL'
+[move_group-3] [INFO] [1790401550.029251511] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401550.033548739] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-3] [INFO] [1790401550.035260961] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-3] [WARN] [1790401550.035416004] [move_group.moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-3] [INFO] [1790401550.041799537] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.042111492] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.050888924] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 32 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.058563358] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.058708335] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.066778268] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 31 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.073741387] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.073911855] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.074802230] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.081744062] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.081878383] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.088989739] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 32 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.094290051] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.094445186] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.095278562] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.102160313] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.102334826] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.110993076] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 33 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.116991176] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.117132199] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.117981446] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.124696080] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.124852614] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.133927806] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 34 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.198500459] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.198732250] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.199665021] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.206033055] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.206187995] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.215624771] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 35 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.219709884] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.219854833] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.220676321] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.226246866] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.226416362] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.235900247] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 36 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.246626989] [move_group.moveit.moveit.ros.move_group.plan_service]: Received new planning service request...
+[move_group-3] [INFO] [1790401550.246718199] [move_group.moveit.moveit.ros.move_group.capability]: Using planning pipeline 'ompl'
+[move_group-3] [INFO] [1790401550.246812123] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401550.246845483] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-3] [INFO] [1790401550.246864741] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-3] [INFO] [1790401550.246912212] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-3] [INFO] [1790401550.248196530] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-3] [INFO] [1790401550.248340619] [move_group]: Calling Planner 'OMPL'
+[move_group-3] [INFO] [1790401550.274821893] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401550.278464851] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-3] [INFO] [1790401550.280107964] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-3] [WARN] [1790401550.280210665] [move_group.moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-3] [INFO] [1790401550.288168600] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.288350022] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.296095074] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 31 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.306503213] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.306696986] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.314420742] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 31 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.319595947] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.319713721] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.320324992] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.326193021] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.326378766] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.334975425] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 32 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.391861481] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.392047189] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.392969544] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.397591680] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.397727695] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.405673456] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 33 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.409565991] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.409744754] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.410639499] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.416256376] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.416429390] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.424984208] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 34 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.429056099] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.429212160] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.430001315] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.439101813] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.439280910] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.447887652] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 35 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.452674534] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.452812012] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.453623499] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 3 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.458882933] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-3] [INFO] [1790401550.459047160] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-3] [INFO] [1790401550.468063476] [move_group.moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 36 points (followed 100.000000% of requested trajectory)
+[move_group-3] [INFO] [1790401550.478123216] [move_group.moveit.moveit.ros.move_group.plan_service]: Received new planning service request...
+[move_group-3] [INFO] [1790401550.478201640] [move_group.moveit.moveit.ros.move_group.capability]: Using planning pipeline 'ompl'
+[move_group-3] [INFO] [1790401550.478301462] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-3] [INFO] [1790401550.478335257] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-3] [WARN] [1790401550.478350210] [move_group.moveit.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[move_group-3] [INFO] [1790401550.478390931] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-3] [INFO] [1790401550.478432467] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-3] [INFO] [1790401550.479022396] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-3] [INFO] [1790401550.479415988] [move_group]: Calling Planner 'OMPL'
+[move_group-3] [INFO] [1790401550.502454280] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-3] [INFO] [1790401550.511518344] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-3] [INFO] [1790401550.512763097] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-3] [WARN] [1790401550.512916954] [move_group.moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-3] [INFO] [1790401550.547869790] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401550.548009925] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401550.548039721] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401550.548202772] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401550.550470452] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401550.550574533] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401550.550644281] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401550.550898089] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401550.557659427] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401550.557778933] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401567.149664935] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401567.170505605] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401567.170697285] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401567.312343847] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401567.312424724] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401567.312450067] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401567.312521954] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401567.320424176] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401567.320567970] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401567.320605543] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401567.320805686] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401567.326391441] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401567.326424884] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401570.063141530] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401570.090038402] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401570.090595601] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401570.119530578] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401570.119623095] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401570.119658196] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401570.119744953] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401570.120680216] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401570.120781917] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401570.120814434] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401570.120957255] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401570.124638383] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401570.124686132] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401570.703707842] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401570.730063922] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401570.730289630] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401570.810083526] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401570.810177060] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401570.810313641] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401570.810415878] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401570.820220750] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401570.820338858] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401570.820374199] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401570.820567592] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401570.825533596] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401570.825547716] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401571.403174585] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401571.430335517] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401571.430526364] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401574.523255235] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401574.523357177] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401574.523390722] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401574.523478053] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401574.530342982] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401574.530460423] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401574.530494922] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401574.530659992] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401574.535954582] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401574.535991479] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401577.338658913] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401577.360155597] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401577.360346667] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401577.385795022] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401577.385892955] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401577.385929093] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401577.386025025] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401577.390317714] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401577.390430081] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401577.390464997] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401577.390661215] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401577.396260816] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401577.396290907] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401587.866989784] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401587.890053547] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401587.890244894] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401587.904902473] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401587.904987768] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401587.905022137] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401587.905111959] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401587.910331601] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401587.910519966] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401587.910557224] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401587.910728443] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401587.915929955] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401587.915968436] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401590.674919480] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401590.701715527] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401590.701922189] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401590.717807064] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401590.717888831] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401590.717922654] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401590.718011643] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401590.720589913] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401590.720674911] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401590.720698652] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401590.720845722] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401590.723350662] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401590.723376466] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401591.301774754] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401591.330104552] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401591.330298260] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401591.412763124] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401591.412855335] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401591.412889991] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401591.412973804] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401591.420204074] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401591.420293322] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401591.420318349] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401591.420466068] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401591.424970589] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401591.424994079] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401592.004964582] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401592.030438914] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401592.030742018] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401595.214699228] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401595.214802115] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401595.214842836] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401595.214933352] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401595.220331603] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401595.220426526] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401595.220457434] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401595.220600476] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401595.225508155] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401595.225542331] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401598.093286242] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401598.120045886] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401598.120231586] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401598.146514492] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401598.146611444] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401598.146645156] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401598.146736274] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401598.150528684] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401598.150598053] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401598.150619626] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401598.150760364] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401598.155874716] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401598.155895557] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401608.589500725] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401608.610154646] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401608.610331929] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401608.704799600] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401608.704879496] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401608.704900746] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401608.704957949] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401608.710943958] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401608.711071613] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401608.711095455] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401608.711250877] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401608.716438693] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401608.716468405] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401611.438390920] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401611.460021092] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401611.460809759] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401611.522012560] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401611.522117613] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401611.522158548] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401611.522257620] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401611.530323351] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401611.530429942] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401611.530461996] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401611.530622937] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401611.535294052] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401611.535336495] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401612.115806430] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401612.140281437] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401612.140539162] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401612.223467705] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401612.223565314] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401612.223601757] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401612.223693959] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401612.230354649] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401612.230452045] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401612.230482313] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401612.230641559] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401612.235187798] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401612.235225288] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401612.815571358] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401612.840132972] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401612.840321338] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401615.872761526] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401615.872860024] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401615.872970141] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401615.873058028] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401615.880613273] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401615.880722716] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401615.880759317] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401615.880926387] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401615.885820303] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401615.885853969] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401618.708876350] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401618.730205788] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401618.730523660] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-3] [INFO] [1790401618.752364892] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-3] [INFO] [1790401618.752471287] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401618.752506074] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401618.752624729] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-3] [INFO] [1790401618.760274159] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-3] [INFO] [1790401618.760377953] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401618.760418193] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-3] [INFO] [1790401618.760584994] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[move_group-3] [INFO] [1790401618.766626988] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-3] [INFO] [1790401618.766639497] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-3] [INFO] [1790401635.368131303] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-3] [INFO] [1790401635.390074488] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-3] [INFO] [1790401635.390253169] [move_group.moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [python3-4]: sending signal 'SIGINT' to process[python3-4]
+[INFO] [move_group-3]: sending signal 'SIGINT' to process[move_group-3]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [python3-1]: sending signal 'SIGINT' to process[python3-1]
+[move_group-3] [INFO] [1790401635.703901274] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1790401635.704611528] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[move_group-3] Stack trace (most recent call last):
+[move_group-3] #6    Object "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1", at 0xffffffffffffffff, in 
+[python3-4] [ERROR] [1790401635.781361526] [piper_trajectory_controller]: Motion stopped: Adapter shutdown
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 34519]
+[INFO] [python3-1]: process has finished cleanly [pid 34518]
+[INFO] [python3-4]: process has finished cleanly [pid 34521]
+[ERROR] [move_group-3]: process[move_group-3] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [move_group-3]: sending signal 'SIGTERM' to process[move_group-3]
+[ERROR] [move_group-3]: process has died [pid 34520, exit code -15, cmd '/opt/ros/jazzy/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_h3l7r8xf -r joint_states:=/piper/feedback/joint_states'].

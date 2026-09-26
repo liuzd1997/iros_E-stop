@@ -1,0 +1,13 @@
+{
+  "sdk_installed": true,
+  "can_interface": "can0",
+  "can_ready": false,
+  "can_state": "STOPPED",
+  "can_bitrate": null,
+  "calibration_measured": false,
+  "configured_switch_channels": [],
+  "commissioning_complete": false,
+  "commissioning_error": "Hardware setup is not commissioned: robot_and_scene_checked, tool_geometry_checked, compliant_contact_tool_checked, button_travel_checked, external_estop_available, targets_do_not_stop_piper",
+  "configuration_ready_for_execution": false,
+  "note": "Configuration checks only; physical feedback, scene and switch associations are checked at runtime."
+}

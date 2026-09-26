@@ -1,0 +1,230 @@
+{
+  "source": "synthetic",
+  "mode": "execute_mock",
+  "started_at": "2026-09-26T04:53:25.161713+00:00",
+  "result": "completed",
+  "initial_pose_restored": true,
+  "buttons": {
+    "button_003": {
+      "position": [
+        0.5000000238418579,
+        0.12000000476837158,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 0.9082307685164595,
+      "status": "completed",
+      "verification": {
+        "method": "mock_joint_FK_and_scene_geometry",
+        "tip_error_m": 1.4207334272555607e-06,
+        "cap_error_m": 0.0,
+        "hold_seconds": 3.0002799469998536
+      }
+    },
+    "button_002": {
+      "position": [
+        0.5000000238418579,
+        0.0,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 0.9082307685164595,
+      "status": "completed",
+      "verification": {
+        "method": "mock_joint_FK_and_scene_geometry",
+        "tip_error_m": 1.0818797509786655e-06,
+        "cap_error_m": 0.0,
+        "hold_seconds": 3.0003263249996053
+      }
+    },
+    "button_001": {
+      "position": [
+        0.5000000238418579,
+        -0.12000000476837158,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 0.9082307685164595,
+      "status": "completed",
+      "verification": {
+        "method": "mock_joint_FK_and_scene_geometry",
+        "tip_error_m": 1.4207344101659826e-06,
+        "cap_error_m": 0.0,
+        "hold_seconds": 3.0002016489997914
+      }
+    }
+  },
+  "events": [
+    {
+      "stage": "Initial pose saved; acquiring all targets",
+      "button": null,
+      "monotonic": 3399.728133049
+    },
+    {
+      "stage": "Inventory locked; order is descending base-frame Y",
+      "button": null,
+      "monotonic": 3399.834204717
+    },
+    {
+      "stage": "All four motion segments planned",
+      "button": "button_003",
+      "monotonic": 3399.921570564
+    },
+    {
+      "stage": "All four motion segments planned",
+      "button": "button_002",
+      "monotonic": 3399.98804188
+    },
+    {
+      "stage": "All four motion segments planned",
+      "button": "button_001",
+      "monotonic": 3400.057027077
+    },
+    {
+      "stage": "Complete itinerary and final return planned",
+      "button": null,
+      "monotonic": 3400.100617516
+    },
+    {
+      "stage": "Approach",
+      "button": "button_003",
+      "monotonic": 3400.191204621
+    },
+    {
+      "stage": "Touch",
+      "button": "button_003",
+      "monotonic": 3404.427813353
+    },
+    {
+      "stage": "Push",
+      "button": "button_003",
+      "monotonic": 3405.552139524
+    },
+    {
+      "stage": "Hold 3.0 seconds",
+      "button": "button_003",
+      "monotonic": 3406.195170453
+    },
+    {
+      "stage": "Verify pressed pose and virtual switch geometry",
+      "button": "button_003",
+      "monotonic": 3409.197071184
+    },
+    {
+      "stage": "Retract",
+      "button": "button_003",
+      "monotonic": 3409.207469713
+    },
+    {
+      "stage": "Completed",
+      "button": "button_003",
+      "monotonic": 3410.492404748
+    },
+    {
+      "stage": "Approach",
+      "button": "button_002",
+      "monotonic": 3410.49719671
+    },
+    {
+      "stage": "Touch",
+      "button": "button_002",
+      "monotonic": 3413.122769597
+    },
+    {
+      "stage": "Push",
+      "button": "button_002",
+      "monotonic": 3414.247291579
+    },
+    {
+      "stage": "Hold 3.0 seconds",
+      "button": "button_002",
+      "monotonic": 3414.887511691
+    },
+    {
+      "stage": "Verify pressed pose and virtual switch geometry",
+      "button": "button_002",
+      "monotonic": 3417.889587682
+    },
+    {
+      "stage": "Retract",
+      "button": "button_002",
+      "monotonic": 3417.901603265
+    },
+    {
+      "stage": "Completed",
+      "button": "button_002",
+      "monotonic": 3419.188403963
+    },
+    {
+      "stage": "Approach",
+      "button": "button_001",
+      "monotonic": 3419.194360305
+    },
+    {
+      "stage": "Touch",
+      "button": "button_001",
+      "monotonic": 3421.822834535
+    },
+    {
+      "stage": "Push",
+      "button": "button_001",
+      "monotonic": 3422.947768187
+    },
+    {
+      "stage": "Hold 3.0 seconds",
+      "button": "button_001",
+      "monotonic": 3423.589433846
+    },
+    {
+      "stage": "Verify pressed pose and virtual switch geometry",
+      "button": "button_001",
+      "monotonic": 3426.591676499
+    },
+    {
+      "stage": "Retract",
+      "button": "button_001",
+      "monotonic": 3426.602654336
+    },
+    {
+      "stage": "Completed",
+      "button": "button_001",
+      "monotonic": 3427.888503545
+    },
+    {
+      "stage": "Return to the original pose saved before detecting buttons",
+      "button": null,
+      "monotonic": 3427.890619503
+    },
+    {
+      "stage": "Done: 3/3 verified in mock hardware; initial pose restored",
+      "button": null,
+      "monotonic": 3432.125662965
+    }
+  ],
+  "initial_joints": {
+    "joint1": 0.0,
+    "joint2": 0.0,
+    "joint3": 0.0,
+    "joint4": 0.0,
+    "joint5": 0.0,
+    "joint6": 0.0
+  },
+  "order": [
+    "button_003",
+    "button_002",
+    "button_001"
+  ],
+  "return_max_joint_error_rad": 9.040774949822947e-05
+}

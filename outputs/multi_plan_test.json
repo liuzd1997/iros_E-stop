@@ -1,0 +1,104 @@
+{
+  "source": "synthetic",
+  "mode": "plan_only",
+  "started_at": "2026-09-26T04:21:05.982366+00:00",
+  "result": "planned_only",
+  "initial_pose_restored": false,
+  "buttons": {
+    "button_003": {
+      "position": [
+        0.5000000238418579,
+        0.12000000476837158,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 0.9082307685164595,
+      "status": "planned",
+      "verification": null
+    },
+    "button_002": {
+      "position": [
+        0.5000000238418579,
+        0.0,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 0.9082307685164595,
+      "status": "planned",
+      "verification": null
+    },
+    "button_001": {
+      "position": [
+        0.5000000238418579,
+        -0.12000000476837158,
+        0.3
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 0.9082307685164595,
+      "status": "planned",
+      "verification": null
+    }
+  },
+  "events": [
+    {
+      "stage": "Initial pose saved; acquiring all targets",
+      "button": null,
+      "monotonic": 1460.106065131
+    },
+    {
+      "stage": "Inventory locked; order is descending base-frame Y",
+      "button": null,
+      "monotonic": 1460.309775067
+    },
+    {
+      "stage": "All four motion segments planned",
+      "button": "button_003",
+      "monotonic": 1460.376837516
+    },
+    {
+      "stage": "All four motion segments planned",
+      "button": "button_002",
+      "monotonic": 1460.430436835
+    },
+    {
+      "stage": "All four motion segments planned",
+      "button": "button_001",
+      "monotonic": 1460.491285365
+    },
+    {
+      "stage": "Complete itinerary and final return planned",
+      "button": null,
+      "monotonic": 1460.532887388
+    },
+    {
+      "stage": "Preview only; no presses verified or executed. Preview omits the dwell.",
+      "button": null,
+      "monotonic": 1460.542132644
+    }
+  ],
+  "initial_joints": {
+    "joint1": 0.0,
+    "joint2": 0.0,
+    "joint3": 0.0,
+    "joint4": 0.0,
+    "joint5": 0.0,
+    "joint6": 0.0
+  },
+  "order": [
+    "button_003",
+    "button_002",
+    "button_001"
+  ]
+}

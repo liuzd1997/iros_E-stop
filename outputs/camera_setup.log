@@ -1,0 +1,46 @@
+[INFO] [launch]: All log files can be found below /home/mppi_zd/AgileX_piper/ros2_ws/log/camera/2026-09-25-21-45-31-605967-macs-22960
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: 🚀 Launching as Normal ROS Node
+[INFO] [realsense2_camera_node-1]: process started with pid [22976]
+[realsense2_camera_node-1] [0m[INFO] [1790397931.749953601] [camera.camera]: RealSense ROS v4.58.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.750043565] [camera.camera]: Built with LibRealSense v2.58.4[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.750064695] [camera.camera]: Running with LibRealSense v2.58.4[0m
+[realsense2_camera_node-1]  25/09 21:45:31,750 WARNING [281472870965248] (context.cpp:41) No valid configuration file found at : /home/mppi_zd/.realsense-config.json loading defaults
+[realsense2_camera_node-1]  25/09 21:45:31,981 WARNING [281472870965248] (ds-motion-common.cpp:452) No HID info provided, IMU is disabled
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983195428] [camera.camera]: Device with serial number 943222073200 was found.
+[realsense2_camera_node-1] [0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983305929] [camera.camera]: Device with physical ID /sys/devices/platform/bus@0/a80aa10000.usb/usb2/2-3/2-3.2/2-3.2:1.0/video4linux/video0 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983324772] [camera.camera]: Device with name RealSense D435I was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983540255] [camera.camera]: Device with port number 2-3.2 was found.[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983557163] [camera.camera]: Device USB type: 3.2[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983571996] [camera.camera]: Starting device RealSense D435I (Product ID: 0x0B3A)[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983657108] [camera.camera]: getParameters...[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983947629] [camera.camera]: JSON file is not provided[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983965268] [camera.camera]: Device Name: RealSense D435I[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983976897] [camera.camera]: Device Serial No: 943222073200[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983985732] [camera.camera]: Device physical port: /sys/devices/platform/bus@0/a80aa10000.usb/usb2/2-3/2-3.2/2-3.2:1.0/video4linux/video0[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.983996102] [camera.camera]: Device FW version: 5.14.0[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.984002222] [camera.camera]: Device Product ID: 0x0B3A[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397931.984008630] [camera.camera]: Sync Mode: On[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.156584325] [camera.camera]: Set ROS param depth_module.depth_profile to default: 848x480x30[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.157611074] [camera.camera]: Set ROS param depth_module.infra_profile to default: 848x480x30[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.164453769] [camera.camera]: Set ROS param rgb_camera.color_profile to default: 1280x720x30[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.168655386] [camera.camera]: Stopping Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.168747350] [camera.camera]: Stopping Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.179831033] [camera.camera]: Starting Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.192204912] [camera.camera]: Open profile: stream_type: Depth(0), Format: Z16, Width: 848, Height: 480, FPS: 30[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.229088601] [camera.camera]: Starting Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.242860621] [camera.camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 30[0m
+[realsense2_camera_node-1] [0m[INFO] [1790397932.252984045] [camera.camera]: RealSense Node Is Up![0m
+[realsense2_camera_node-1] [33m[WARN] [1790397932.311590931] [camera.camera]: frame's time domain is HARDWARE_CLOCK. Timestamps may reset periodically.[0m
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [realsense2_camera_node-1]: sending signal 'SIGINT' to process[realsense2_camera_node-1]
+[realsense2_camera_node-1] [0m[INFO] [1790398210.533190183] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1790398210.533837811] [camera.camera]: Stop Sensor: Depth Module[0m
+[realsense2_camera_node-1] [0m[INFO] [1790398210.533867691] [camera.camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1790398210.538514335] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[realsense2_camera_node-1] [0m[INFO] [1790398210.539825167] [camera.camera]: Close Sensor - Done. [0m
+[realsense2_camera_node-1] [0m[INFO] [1790398210.539863658] [camera.camera]: Stop Sensor: RGB Camera[0m
+[realsense2_camera_node-1] [0m[INFO] [1790398210.539874427] [camera.camera]: Close Sensor. [0m
+[realsense2_camera_node-1] [0m[INFO] [1790398210.687048114] [camera.camera]: Close Sensor - Done. [0m
+[INFO] [realsense2_camera_node-1]: process has finished cleanly [pid 22976]

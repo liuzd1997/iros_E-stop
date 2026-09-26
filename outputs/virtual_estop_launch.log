@@ -1,0 +1,576 @@
+Starting Piper + gripper with mock hardware (ROS domain 77).
+In RViz: choose arm, move the goal marker, click Plan, then Execute.
+[INFO] [launch]: All log files can be found below /home/mppi_zd/AgileX_piper/ros2_ws/log/demo/2026-09-25-21-53-07-746751-macs-24531
+[INFO] [launch]: Default logging verbosity is set to INFO
+WARNING:root:[33;21mCannot infer SRDF from `/home/mppi_zd/AgileX_piper/ros2_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/mppi_zd/AgileX_piper/ros2_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/mppi_zd/AgileX_piper/ros2_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/mppi_zd/AgileX_piper/ros2_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/mppi_zd/AgileX_piper/ros2_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/home/mppi_zd/AgileX_piper/ros2_ws/install/agx_arm_moveit/share/agx_arm_moveit`. -- using config/agx_arm.srdf[0m
+[INFO] [robot_state_publisher-1]: process started with pid [24565]
+[INFO] [move_group-2]: process started with pid [24566]
+[INFO] [rviz2-3]: process started with pid [24567]
+[INFO] [ros2_control_node-4]: process started with pid [24568]
+[INFO] [spawner-5]: process started with pid [24569]
+[INFO] [spawner-6]: process started with pid [24570]
+[INFO] [spawner-7]: process started with pid [24571]
+[ros2_control_node-4] [INFO] [1790398388.145161456] [controller_manager]: Using Steady (Monotonic) clock for triggering controller manager cycles.
+[robot_state_publisher-1] [INFO] [1790398388.145777447] [robot_state_publisher]: Robot initialized
+[ros2_control_node-4] [INFO] [1790398388.149900222] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[ros2_control_node-4] [INFO] [1790398388.149983352] [controller_manager]: update rate is 200 Hz
+[ros2_control_node-4] [INFO] [1790398388.149990076] [controller_manager]: Overruns handling is : enabled
+[ros2_control_node-4] [INFO] [1790398388.149994863] [controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[ros2_control_node-4] [WARN] [1790398388.150072475] [controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[ros2_control_node-4] [INFO] [1790398388.160541521] [controller_manager]: Received robot description from topic.
+[ros2_control_node-4] [INFO] [1790398388.160599540] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[ros2_control_node-4] [INFO] [1790398388.162661701] [controller_manager]: Loading hardware 'FakeSystem' 
+[ros2_control_node-4] [INFO] [1790398388.163023863] [controller_manager]: Loaded hardware 'FakeSystem' from plugin 'mock_components/GenericSystem'
+[ros2_control_node-4] [INFO] [1790398388.163097281] [controller_manager]: Initialize hardware 'FakeSystem' 
+[ros2_control_node-4] [INFO] [1790398388.168466057] [controller_manager]: Successful initialization of hardware 'FakeSystem'
+[ros2_control_node-4] [INFO] [1790398388.168675921] [controller_manager]: Activating component 'FakeSystem'.
+[ros2_control_node-4] [INFO] [1790398388.168689208] [resource_manager]: 'configure' hardware 'FakeSystem' 
+[ros2_control_node-4] [INFO] [1790398388.168702746] [resource_manager]: Successful 'configure' of hardware 'FakeSystem'
+[ros2_control_node-4] [INFO] [1790398388.168708949] [resource_manager]: 'activate' hardware 'FakeSystem' 
+[ros2_control_node-4] [INFO] [1790398388.168717162] [resource_manager]: Successful 'activate' of hardware 'FakeSystem'
+[ros2_control_node-4] [INFO] [1790398388.168783654] [controller_manager]: Registering statistics for : FakeSystem
+[ros2_control_node-4] [INFO] [1790398388.168876572] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[move_group-2] [INFO] [1790398388.183398086] [moveit.moveit.ros.rdf_loader]: Loaded robot model in 0.0036705 seconds
+[move_group-2] [INFO] [1790398388.183548394] [moveit.moveit.core.robot_model]: Loading robot model 'agx_arm'...
+[move_group-2] [INFO] [1790398388.183564172] [moveit.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[move_group-2] [INFO] [1790398388.386043438] [moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'arm': 1 1 1 1 1 1
+[spawner-7] [INFO] [1790398388.477438477] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[rviz2-3] [INFO] [1790398388.975177558] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1790398388.975312153] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[move_group-2] [INFO] [1790398388.983479656] [moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-2] [INFO] [1790398388.983647898] [moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-2] [INFO] [1790398388.984286816] [moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-2] [INFO] [1790398388.984654738] [moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-2] [INFO] [1790398388.984668766] [moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[move_group-2] [INFO] [1790398388.984787731] [moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-2] [INFO] [1790398388.985055652] [moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-2] [INFO] [1790398388.985113448] [moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[move_group-2] [INFO] [1790398388.985358239] [moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-2] [INFO] [1790398388.985370165] [moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-2] [INFO] [1790398388.985964378] [moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-2] [INFO] [1790398388.986248272] [moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-2] [WARN] [1790398388.986396070] [moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-2] [ERROR] [1790398388.986476765] [moveit.moveit.ros.occupancy_map_monitor]: Exception while loading octomap updater 'occupancy_map_monitor/PointCloudOctomapUpdater': According to the loaded plugin descriptions the class occupancy_map_monitor/PointCloudOctomapUpdater with base class type occupancy_map_monitor::OccupancyMapUpdater does not exist. Declared types are 
+[move_group-2] 
+[move_group-2] [ERROR] [1790398388.986532331] [moveit.moveit.ros.occupancy_map_monitor]: Failed to load sensor: `point_cloud_sensor` of type: `occupancy_map_monitor/PointCloudOctomapUpdater`
+[rviz2-3] [INFO] [1790398389.116812208] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[rviz2-3]          at line 321 in /opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp
+[move_group-2] [INFO] [1790398390.601436144] [moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'STOMP'
+[move_group-2] [INFO] [1790398390.602048996] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398390.602614857] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398390.602625894] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398390.602762164] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398390.602768257] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-2] [INFO] [1790398390.602782924] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-2] [INFO] [1790398390.602786369] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-2] [INFO] [1790398390.602801341] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-2] [INFO] [1790398390.603366719] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398390.604521274] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398390.604533108] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-2] [INFO] [1790398390.606300476] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-2] [INFO] [1790398390.606318357] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-2] [INFO] [1790398390.606822549] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-2] [INFO] [1790398390.609090240] [moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'CHOMP'
+[move_group-2] [INFO] [1790398390.609643805] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398390.609696879] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398390.609701815] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398390.609836086] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398390.609842845] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-2] [INFO] [1790398390.609857114] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-2] [INFO] [1790398390.609860623] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-2] [INFO] [1790398390.609869604] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-2] [INFO] [1790398390.610382242] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398390.610604300] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398390.610610412] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-2] [INFO] [1790398390.610897277] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-2] [INFO] [1790398390.610906917] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-2] [INFO] [1790398390.611151697] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-2] [INFO] [1790398390.612761694] [moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-2] [INFO] [1790398390.617037897] [moveit.moveit.planners.pilz.command_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[move_group-2] [INFO] [1790398390.617065240] [moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[move_group-2] [INFO] [1790398390.617971976] [moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [CIRC]
+[move_group-2] [INFO] [1790398390.617988967] [moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[move_group-2] [INFO] [1790398390.618564170] [moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [LIN]
+[move_group-2] [INFO] [1790398390.618577568] [moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[move_group-2] [INFO] [1790398390.619099752] [moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [PTP]
+[move_group-2] [INFO] [1790398390.619115762] [moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'Pilz Industrial Motion Planner'
+[move_group-2] [INFO] [1790398390.619684612] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398390.619738928] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398390.619743974] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398390.619947449] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398390.619955237] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-2] [INFO] [1790398390.619974599] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-2] [INFO] [1790398390.619979247] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-2] [INFO] [1790398390.619990663] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-2] [INFO] [1790398390.620524801] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-2] [INFO] [1790398390.621313146] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-2] [INFO] [1790398390.621326378] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-2] [INFO] [1790398390.621606178] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-2] [INFO] [1790398390.630971819] [moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[move_group-2] [INFO] [1790398390.631574457] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398390.631638218] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398390.631645181] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398390.631872083] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398390.631880138] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-2] [INFO] [1790398390.631898379] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-2] [INFO] [1790398390.631902305] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-2] [INFO] [1790398390.631912305] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-2] [INFO] [1790398390.632451887] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398390.632776605] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398390.632784753] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-2] [INFO] [1790398390.633256399] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-2] [INFO] [1790398390.633267269] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-2] [INFO] [1790398390.633558413] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-2] [INFO] [1790398390.664391561] [moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for arm_controller
+[move_group-2] [INFO] [1790398390.665872760] [moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for gripper_controller
+[move_group-2] [INFO] [1790398390.666100735] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398390.666134865] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398390.666518796] [moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-2] [INFO] [1790398390.666550196] [move_group]: MoveGroup debug mode is ON
+[move_group-2] [INFO] [1790398390.681491068] [moveit.moveit.planners.pilz.move_group_sequence_action]: initialize move group sequence action
+[move_group-2] [INFO] [1790398390.683857751] [moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-2] [INFO] [1790398390.684095172] [moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-2] [INFO] [1790398390.684750497] [moveit.moveit.ros.move_group.executable]: 
+[move_group-2] 
+[move_group-2] ********************************************************
+[move_group-2] * MoveGroup using: 
+[move_group-2] *     - apply_planning_scene_service
+[move_group-2] *     - clear_octomap_service
+[move_group-2] *     - get_group_urdf
+[move_group-2] *     - load_geometry_from_file
+[move_group-2] *     - CartesianPathService
+[move_group-2] *     - execute_trajectory_action
+[move_group-2] *     - get_planning_scene_service
+[move_group-2] *     - kinematics_service
+[move_group-2] *     - move_action
+[move_group-2] *     - motion_plan_service
+[move_group-2] *     - query_planners_service
+[move_group-2] *     - state_validation_service
+[move_group-2] *     - save_geometry_to_file
+[move_group-2] *     - SequenceAction
+[move_group-2] *     - SequenceService
+[move_group-2] ********************************************************
+[move_group-2] 
+[move_group-2] [INFO] [1790398390.684803015] [moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
+[move_group-2] [INFO] [1790398390.684812192] [moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
+[move_group-2] [96mLoading 'move_group/ApplyPlanningSceneService'...[0m
+[move_group-2] [96mLoading 'move_group/ClearOctomapService'...[0m
+[move_group-2] [96mLoading 'move_group/GetUrdfService'...[0m
+[move_group-2] [96mLoading 'move_group/LoadGeometryFromFileService'...[0m
+[move_group-2] [96mLoading 'move_group/MoveGroupCartesianPathService'...[0m
+[move_group-2] [96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...[0m
+[move_group-2] [96mLoading 'move_group/MoveGroupGetPlanningSceneService'...[0m
+[move_group-2] [96mLoading 'move_group/MoveGroupKinematicsService'...[0m
+[move_group-2] [96mLoading 'move_group/MoveGroupMoveAction'...[0m
+[move_group-2] [96mLoading 'move_group/MoveGroupPlanService'...[0m
+[move_group-2] [96mLoading 'move_group/MoveGroupQueryPlannersService'...[0m
+[move_group-2] [96mLoading 'move_group/MoveGroupStateValidationService'...[0m
+[move_group-2] [96mLoading 'move_group/SaveGeometryToFileService'...[0m
+[move_group-2] [96mLoading 'pilz_industrial_motion_planner/MoveGroupSequenceAction'...[0m
+[move_group-2] [96mLoading 'pilz_industrial_motion_planner/MoveGroupSequenceService'...[0m
+[move_group-2] 
+[move_group-2] [92mYou can start planning now![0m
+[move_group-2] 
+[rviz2-3] [ERROR] [1790398392.290308618] [moveit_1698796668.moveit.ros.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-3] [INFO] [1790398392.323083964] [moveit_1698796668.moveit.ros.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-3] [INFO] [1790398392.420300743] [moveit_1698796668.moveit.ros.rdf_loader]: Loaded robot model in 0.00415196 seconds
+[rviz2-3] [INFO] [1790398392.420877048] [moveit_1698796668.moveit.core.robot_model]: Loading robot model 'agx_arm'...
+[rviz2-3] [INFO] [1790398392.420914993] [moveit_1698796668.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[rviz2-3] [INFO] [1790398392.671212087] [moveit_1698796668.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'arm': 1 1 1 1 1 1
+[rviz2-3] [INFO] [1790398393.281977152] [moveit_1698796668.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-3] [INFO] [1790398393.283461563] [moveit_1698796668.moveit.ros.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-3] [INFO] [1790398393.886590682] [interactive_marker_display_187650923477168]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-3] [INFO] [1790398393.900990084] [moveit_1698796668.moveit.ros.motion_planning_frame]: group arm
+[rviz2-3] [INFO] [1790398393.901035567] [moveit_1698796668.moveit.ros.motion_planning_frame]: Constructing new MoveGroup connection for group 'arm' in namespace ''
+[rviz2-3] [INFO] [1790398393.912573074] [moveit_1698796668.moveit.ros.move_group_interface]: Ready to take commands for planning group arm.
+[rviz2-3] [INFO] [1790398393.913563598] [moveit_1698796668.moveit.ros.motion_planning_frame]: group arm
+[rviz2-3] [INFO] [1790398394.017698113] [interactive_marker_display_187650923477168]: Sending request for interactive markers
+[rviz2-3] [INFO] [1790398394.072431548] [interactive_marker_display_187650923477168]: Service response received for initialization
+[spawner-7] [WARN] [1790398398.728897243] [spawner_joint_state_broadcaster]: Failed getting a result from calling /controller_manager/list_controllers in 10.0. (Attempt 1 of 3.)
+[ros2_control_node-4] [INFO] [1790398398.731850991] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[ros2_control_node-4] [INFO] [1790398398.731948076] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[ros2_control_node-4] [WARN] [1790398398.736617443] [controller_manager]: The use of remapping arguments to the controller_manager node is deprecated. Please use the '--controller-ros-args' argument of the spawner to pass remapping arguments to the controller node.
+[ros2_control_node-4] [INFO] [1790398398.736660165] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /tmp/launch_params_qag3t8w9 --params-file /tmp/ros2_controllers_bpg8tt2o.yaml -r joint_states:=/piper_demo/mock_joint_states 
+[spawner-7] [INFO] [1790398398.757407747] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[ros2_control_node-4] [INFO] [1790398398.759092273] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[ros2_control_node-4] [INFO] [1790398398.759399639] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[ros2_control_node-4] [INFO] [1790398398.772353575] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[ros2_control_node-4] [INFO] [1790398398.775558485] [controller_manager]: Successfully switched controllers!
+[spawner-7] [INFO] [1790398398.782589508] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[spawner-6] [INFO] [1790398398.918298480] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [spawner-7]: process has finished cleanly [pid 24571]
+[ros2_control_node-4] [INFO] [1790398401.925741389] [controller_manager]: Loading controller : 'gripper_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[ros2_control_node-4] [INFO] [1790398401.925814686] [controller_manager]: Loading controller 'gripper_controller'
+[ros2_control_node-4] [WARN] [1790398401.929120051] [controller_manager]: The use of remapping arguments to the controller_manager node is deprecated. Please use the '--controller-ros-args' argument of the spawner to pass remapping arguments to the controller node.
+[ros2_control_node-4] [INFO] [1790398401.929157302] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file /tmp/launch_params_qag3t8w9 --params-file /tmp/ros2_controllers_bpg8tt2o.yaml -r joint_states:=/piper_demo/mock_joint_states 
+[spawner-6] [INFO] [1790398401.948051320] [spawner_gripper_controller]: Loaded gripper_controller
+[ros2_control_node-4] [INFO] [1790398401.949917746] [controller_manager]: Configuring controller: 'gripper_controller'
+[ros2_control_node-4] [INFO] [1790398401.950164648] [gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ros2_control_node-4] [INFO] [1790398401.950215047] [gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ros2_control_node-4] [INFO] [1790398401.950259584] [gripper_controller]: Using 'splines' interpolation method.
+[ros2_control_node-4] [INFO] [1790398401.953568421] [gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[ros2_control_node-4] [INFO] [1790398401.961367836] [gripper_controller]: Setting initial scaling factor to 1.000000
+[ros2_control_node-4] [INFO] [1790398401.961410420] [gripper_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[ros2_control_node-4] [INFO] [1790398401.967869907] [controller_manager]: Activating controllers: [ gripper_controller ]
+[ros2_control_node-4] [INFO] [1790398401.970582707] [controller_manager]: Successfully switched controllers!
+[spawner-6] [INFO] [1790398401.977669953] [spawner_gripper_controller]: Configured and activated gripper_controller
+[spawner-5] [INFO] [1790398402.110306538] [spawner_arm_controller]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [spawner-6]: process has finished cleanly [pid 24570]
+[ros2_control_node-4] [INFO] [1790398403.865978897] [controller_manager]: Loading controller : 'arm_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[ros2_control_node-4] [INFO] [1790398403.866049268] [controller_manager]: Loading controller 'arm_controller'
+[ros2_control_node-4] [WARN] [1790398403.866797724] [controller_manager]: The use of remapping arguments to the controller_manager node is deprecated. Please use the '--controller-ros-args' argument of the spawner to pass remapping arguments to the controller node.
+[ros2_control_node-4] [INFO] [1790398403.866843271] [controller_manager]: Controller 'arm_controller' node arguments: --ros-args --params-file /tmp/launch_params_qag3t8w9 --params-file /tmp/ros2_controllers_bpg8tt2o.yaml -r joint_states:=/piper_demo/mock_joint_states 
+[spawner-5] [INFO] [1790398403.897195499] [spawner_arm_controller]: Loaded arm_controller
+[ros2_control_node-4] [INFO] [1790398403.899037175] [controller_manager]: Configuring controller: 'arm_controller'
+[ros2_control_node-4] [INFO] [1790398403.899492321] [arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ros2_control_node-4] [INFO] [1790398403.899531969] [arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ros2_control_node-4] [INFO] [1790398403.899550655] [arm_controller]: Using 'splines' interpolation method.
+[ros2_control_node-4] [INFO] [1790398403.901223106] [arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[ros2_control_node-4] [INFO] [1790398403.906623040] [arm_controller]: Setting initial scaling factor to 1.000000
+[ros2_control_node-4] [INFO] [1790398403.906658910] [arm_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[ros2_control_node-4] [INFO] [1790398403.913008386] [controller_manager]: Activating controllers: [ arm_controller ]
+[ros2_control_node-4] [INFO] [1790398403.915836345] [controller_manager]: Successfully switched controllers!
+[spawner-5] [INFO] [1790398403.922015032] [spawner_arm_controller]: Configured and activated arm_controller
+[INFO] [spawner-5]: process has finished cleanly [pid 24569]
+[move_group-2] [INFO] [1790398407.420219643] [moveit.moveit.ros.move_group.plan_service]: Received new planning service request...
+[move_group-2] [INFO] [1790398407.420351914] [moveit.moveit.ros.move_group.capability]: Using planning pipeline 'ompl'
+[move_group-2] [INFO] [1790398407.420671345] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398407.420748938] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398407.420770855] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-2] [INFO] [1790398407.420835291] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-2] [INFO] [1790398407.422327999] [moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-2] [INFO] [1790398407.422623605] [move_group]: Calling Planner 'OMPL'
+[move_group-2] [INFO] [1790398407.455078636] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398407.464395880] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-2] [INFO] [1790398407.465710215] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-2] [WARN] [1790398407.465939616] [moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-2] [INFO] [1790398407.471846502] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.472074700] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.477478967] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 21 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.481701086] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.481817412] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.483650774] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 7 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.487436712] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.487547638] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.493868744] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.504072464] [moveit.moveit.ros.move_group.plan_service]: Received new planning service request...
+[move_group-2] [INFO] [1790398407.504160364] [moveit.moveit.ros.move_group.capability]: Using planning pipeline 'ompl'
+[move_group-2] [INFO] [1790398407.504243504] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398407.504283069] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398407.504303736] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-2] [INFO] [1790398407.504350422] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-2] [INFO] [1790398407.504974607] [moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-2] [INFO] [1790398407.505092443] [move_group]: Calling Planner 'OMPL'
+[move_group-2] [INFO] [1790398407.528335602] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398407.532063269] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-2] [INFO] [1790398407.533843704] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-2] [WARN] [1790398407.534031540] [moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-2] [INFO] [1790398407.538409301] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.538571174] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.544473532] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 21 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.547993919] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.548116411] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.550017394] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 7 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.553894759] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.554014557] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.560864948] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.570220211] [moveit.moveit.ros.move_group.plan_service]: Received new planning service request...
+[move_group-2] [INFO] [1790398407.570295406] [moveit.moveit.ros.move_group.capability]: Using planning pipeline 'ompl'
+[move_group-2] [INFO] [1790398407.570370972] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398407.570405130] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-2] [INFO] [1790398407.570425065] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-2] [INFO] [1790398407.570469613] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-2] [INFO] [1790398407.571024852] [moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-2] [INFO] [1790398407.571144882] [move_group]: Calling Planner 'OMPL'
+[move_group-2] [INFO] [1790398407.597861446] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398407.601568696] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-2] [INFO] [1790398407.603335557] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-2] [WARN] [1790398407.603490392] [moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-2] [INFO] [1790398407.607608511] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.607736309] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.612990814] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 21 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.617243055] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.617406956] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.619296290] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 7 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.622843195] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Received request to compute Cartesian path
+[move_group-2] [INFO] [1790398407.623129960] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Attempting to follow 1 waypoints for link 'link6' using a step of 0.001000 m and jump threshold 5.000000 (in global reference frame)
+[move_group-2] [INFO] [1790398407.629699781] [moveit.moveit.ros.move_group.cartesian_path_service_capability]: Computed Cartesian path with 26 points (followed 100.000000% of requested trajectory)
+[move_group-2] [INFO] [1790398407.638034260] [moveit.moveit.ros.move_group.plan_service]: Received new planning service request...
+[move_group-2] [INFO] [1790398407.638120122] [moveit.moveit.ros.move_group.capability]: Using planning pipeline 'ompl'
+[move_group-2] [INFO] [1790398407.638208355] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-2] [INFO] [1790398407.638240365] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-2] [WARN] [1790398407.638254383] [moveit.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[move_group-2] [INFO] [1790398407.638293227] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-2] [INFO] [1790398407.638353969] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-2] [INFO] [1790398407.638908505] [moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-2] [INFO] [1790398407.639036571] [move_group]: Calling Planner 'OMPL'
+[move_group-2] [INFO] [1790398407.661229890] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-2] [INFO] [1790398407.670688830] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-2] [INFO] [1790398407.672002915] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-2] [WARN] [1790398407.672186344] [moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-2] [INFO] [1790398407.783797443] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398407.783925306] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398407.783972195] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398407.784188477] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398407.785886215] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398407.785998921] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398407.786052403] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398407.786377130] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398407.787331589] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398407.787435915] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398407.787711363] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398407.787806245] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398411.975406528] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398411.988458930] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398412.000745858] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398412.000962834] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398412.009302609] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398412.009379805] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398412.009420667] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398412.009518547] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398412.010853808] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398412.011012681] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398412.011052561] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398412.011277000] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398412.011726637] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398412.011816814] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398412.012104531] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398412.012132550] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398413.100378497] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398413.112691257] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398413.125517305] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398413.125693760] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398413.133394601] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398413.133479046] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398413.133514204] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398413.133606168] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398413.135729729] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398413.135847230] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398413.135886703] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398413.136136337] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398413.136574547] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398413.136641474] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398413.136893672] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398413.136925969] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398413.690376711] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398413.737377370] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398413.750567803] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398413.750750731] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398416.788035223] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398416.788129846] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398416.788166198] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398416.788257996] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398416.790836729] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398416.790925916] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398416.790960565] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398416.791150827] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398416.791453526] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398416.791543620] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398416.791890588] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398416.791921422] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398418.010418190] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398418.042376494] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398418.055607205] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398418.055767819] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398418.077516994] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398418.077608117] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398418.077644431] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398418.077756508] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398418.080882944] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398418.080990186] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398418.081035891] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398418.081262505] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398418.081704132] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398418.081757772] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398418.081914885] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398418.081947164] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398420.640422681] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398420.682707866] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398420.695609981] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398420.695828660] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398420.704176473] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398420.704271928] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398420.704307419] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398420.704410708] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398420.705882027] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398420.705995270] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398420.706038345] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398420.706292125] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398420.706912747] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398420.707037536] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398420.707788232] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398420.707821770] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398421.805386301] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398421.807748291] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398421.820558257] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398421.820723398] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398421.828872791] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398421.828947135] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398421.828982867] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398421.829084785] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398421.831042102] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398421.831168623] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398421.831206355] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398421.831427682] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398421.831947125] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398421.832044359] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398421.832910779] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398421.832943909] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398422.390428688] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398422.433151777] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398422.445522134] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398422.445878890] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398425.483136485] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398425.483250579] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398425.483288080] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398425.483392443] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398425.485729859] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398425.485843684] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398425.485881416] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398425.486126985] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398425.486510398] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398425.486571121] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398425.486845181] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398425.486866116] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398426.725343638] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398426.737762485] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398426.750525181] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398426.750698481] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398426.776070250] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398426.776177622] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398426.776213465] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398426.776359718] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398426.780711479] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398426.780857259] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398426.780896463] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398426.781162226] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398426.781700318] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398426.781791412] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398426.782122889] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398426.782145529] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398429.340379947] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398429.382550633] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398429.395585472] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398429.395778540] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398429.404594250] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398429.404688843] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398429.404723993] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398429.404823180] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398429.407151557] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398429.407260208] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398429.407299616] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398429.407532110] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398429.408023034] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398429.408096646] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398429.408371891] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398429.408403105] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398430.490389310] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398430.509381398] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398430.520556125] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398430.520719637] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398430.530013706] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398430.530095198] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398430.530131670] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398430.530228533] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398430.531024138] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398430.531170029] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398430.531210455] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398430.531447191] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398430.532010856] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398430.532086229] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398430.532339519] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398430.532362788] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398431.085395711] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398431.132901036] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398431.145541573] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398431.145867319] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398434.184322568] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398434.184433319] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398434.184469311] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398434.184568034] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398434.185673033] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398434.185774285] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398434.185806794] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398434.186020177] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398434.186402748] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398434.186468138] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398434.186724929] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398434.186757679] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398435.405381326] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398435.437334938] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398435.450669885] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398435.450857442] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[move_group-2] [INFO] [1790398435.472107834] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution request received
+[move_group-2] [INFO] [1790398435.472198892] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398435.472234559] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398435.472363811] [moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-2] [INFO] [1790398435.475746594] [moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-2] [INFO] [1790398435.475852420] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398435.475887327] [moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-2] [INFO] [1790398435.476121174] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to arm_controller
+[ros2_control_node-4] [INFO] [1790398435.476667711] [arm_controller]: Received new action goal
+[ros2_control_node-4] [INFO] [1790398435.476747175] [arm_controller]: Accepted new action goal
+[move_group-2] [INFO] [1790398435.477366193] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: arm_controller started execution
+[move_group-2] [INFO] [1790398435.477379638] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[ros2_control_node-4] [INFO] [1790398439.666007308] [arm_controller]: Goal reached, success!
+[move_group-2] [INFO] [1790398439.677492838] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'arm_controller' successfully finished
+[move_group-2] [INFO] [1790398439.690529354] [moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-2] [INFO] [1790398439.690713468] [moveit.moveit.ros.move_group.clear_octomap_service]: Execution completed: SUCCEEDED
+[ros2_control_node-4] [WARN] [1790398724.715557969] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.266368 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790398792.702870808] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 7.578504 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790398813.606528333] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 6.236019 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790398845.315339741] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.047280 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790398928.010407750] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.115548 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790399636.371015666] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.722945 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790399937.028047337] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 7.755634 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400328.106635912] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 6.344061 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400669.835418025] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.126109 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400686.190529625] [controller_manager]: Overrun might occur, Total time : 5153.385 us (Expected < 5000.000 us) --> Read time : 30.926 us, Update time : 5111.681 us, Write time : 10.778 us
+[ros2_control_node-4] [WARN] [1790400686.190610858] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.318637 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400695.271126436] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.833974 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400697.135485716] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.193588 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400702.171102346] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.810486 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400763.985731716] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.440070 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400812.666820966] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 6.528837 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400844.115297661] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.005681 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400857.915349661] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.057311 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400912.666715433] [controller_manager]: Overrun might occur, Total time : 6344.792 us (Expected < 5000.000 us) --> Read time : 32.759 us, Update time : 6301.514 us, Write time : 10.519 us
+[ros2_control_node-4] [WARN] [1790400912.666813731] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 6.521547 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400913.766040752] [controller_manager]: Overrun might occur, Total time : 5671.914 us (Expected < 5000.000 us) --> Read time : 33.102 us, Update time : 5631.255 us, Write time : 7.557 us
+[ros2_control_node-4] [WARN] [1790400913.766131790] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.839652 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400915.915512173] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.220221 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400943.411112795] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.820546 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400943.611001124] [controller_manager]: Overrun might occur, Total time : 5637.895 us (Expected < 5000.000 us) --> Read time : 23.611 us, Update time : 5607.377 us, Write time : 6.907 us
+[ros2_control_node-4] [WARN] [1790400956.611120746] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.828534 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400964.011093749] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.801621 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400967.915516120] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.224140 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400990.375728081] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.435934 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790400992.506642220] [controller_manager]: Overrun might occur, Total time : 5785.194 us (Expected < 5000.000 us) --> Read time : 31.520 us, Update time : 5739.461 us, Write time : 14.213 us
+[ros2_control_node-4] [WARN] [1790400992.506755183] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 6.462759 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401000.775499067] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.207865 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401003.711206676] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.914613 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401011.611081127] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.789304 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401022.011112187] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.819855 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401071.090443534] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.151851 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401084.891017035] [controller_manager]: Overrun might occur, Total time : 5637.629 us (Expected < 5000.000 us) --> Read time : 31.167 us, Update time : 5598.619 us, Write time : 7.843 us
+[ros2_control_node-4] [WARN] [1790401084.891139453] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.847130 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401140.510962162] [controller_manager]: Overrun might occur, Total time : 5603.499 us (Expected < 5000.000 us) --> Read time : 16.750 us, Update time : 5583.638 us, Write time : 3.111 us
+[ros2_control_node-4] [WARN] [1790401140.511028913] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.737358 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401193.097080243] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 6.788790 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401223.565722172] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.430294 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401249.565915802] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.623443 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401299.847056218] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 6.764368 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401324.131019603] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.727355 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401385.730312655] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.020314 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401399.307079436] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 6.786613 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401473.011190388] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.898232 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401546.095405671] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.113913 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401548.005357905] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 5.065620 ms (missed cycles : 2).
+[ros2_control_node-4] [WARN] [1790401781.563044929] [controller_manager]: Overrun might occur, Total time : 7685.427 us (Expected < 5000.000 us) --> Read time : 17.397 us, Update time : 7662.835 us, Write time : 5.195 us
+[ros2_control_node-4] [WARN] [1790401781.563137511] [controller_manager]: Overrun detected! The controller manager missed its desired rate of 200 Hz. The loop took 7.845114 ms (missed cycles : 2).
