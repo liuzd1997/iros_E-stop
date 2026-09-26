@@ -4,3 +4,4 @@ ros2_ws/log/
 __pycache__/
 .deps/
 vendor/
+outputs/live_button_*.png
